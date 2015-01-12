@@ -4,6 +4,7 @@ class EntriesController < ApplicationController
 	end
 
 	def show
+		@entry = Entry.find(params[:id])
 	end
 
 	def new
@@ -11,9 +12,11 @@ class EntriesController < ApplicationController
 	end
 
 	def create
+		
 	end
 
 	def edit
+		@entry = Entry.find(params[:id])
 	end
 
 	def update
