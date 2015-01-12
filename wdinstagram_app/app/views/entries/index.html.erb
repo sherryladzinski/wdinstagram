@@ -1,1 +1,8 @@
-<h1>Hello</h1>
+<% @entries.each do |entry| %>
+<%= entry.author %>
+<%= entry.photo_url %>
+<% end %>
+
+
+<br>
+<%= link_to "New Entry", new_entry_path %>
